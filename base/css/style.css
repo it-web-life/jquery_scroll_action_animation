@@ -74,7 +74,17 @@
   width: 50%;
   margin: 10px;
 }
-
+@media screen and (max-width:767px) {
+  .content {
+    flex-direction: column;
+  }
+  .content__text {
+    width: 100%;
+  }
+  .content__image {
+    width: 100%;
+  }
+}
 .list {
   display: flex;
   justify-content: space-between;
@@ -82,5 +92,14 @@
 }
 
 .item {
-  margin: 10px
+  margin: 10px;
+}
+.fadelist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.fadeitem {
+  margin: 10px;
 }
